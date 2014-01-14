@@ -12,7 +12,7 @@ public class NombreRomain {
 	this.valeur = r;
     }
 
-    public int en_decimal() {z
+    public int en_decimal() {
 	return 0;
     }
 }
