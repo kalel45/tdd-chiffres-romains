@@ -11,19 +11,16 @@ public class NombreDecimal {
     public NombreDecimal(int n) {
 	this.valeur = n;
     }
-
+	
     public String en_romain() {
-		if (valeur==1)
-			return "I";
-		if (valeur==2)
-			return "II";
-		if (valeur==3)
-			return "III";
-		if (valeur==4)
-			return "IV";
-		if (valeur==5)
-			return "V";
-	return "";
+		return en_romain_unites(valeur);
     }
     
+    static String[] table_unites = {
+		"", "I", "II", "III", "IV"
+	};
+	
+	String en_romain_unites(int n) {
+			return table_unites[n];
+	}
 }
